@@ -8,13 +8,13 @@ Net ID: bpa2hu
 
 DOI:
 
-Press Release: 
+Press Release: [link](https://github.com/elaineliu05/databydesign_p2/blob/main/press_release.md)
 
 Data:
 
-Pipeline:
+Pipeline: [link](https://github.com/elaineliu05/databydesign_p2/blob/main/pipeline)
 
-License: MIT License. 
+License: MIT License. [license](https://github.com/elaineliu05/databydesign_p2/blob/main/LICENSE)
 
 ## Problem Definition:
 
