@@ -6,7 +6,7 @@ Name: Elaine Liu
 
 Net ID: bpa2hu
 
-DOI:
+DOI: [link](https://doi.org/10.5281/zenodo.19703323)
 
 Press Release: [link](https://github.com/elaineliu05/databydesign_p2/blob/main/press_release.md)
 
