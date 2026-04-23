@@ -20,7 +20,9 @@ License: MIT License. [license](https://github.com/elaineliu05/databydesign_p2/b
 
 **Refined specific problem statement**:
 
-Forecasting the future returns of the S&P 500 Index using historical time series data. Instead of the closing price, we aim to predict the gain or loss, aka percent changes, of S&P 500 closing prices from 2020 to 2026. This will be done using Alpha Vantage stock market data, since they have open/high/low/close prices of the S&P 500 Index from 1997 to the present day. 
+Forecasting the future returns of the S&P 500 Index using historical time series data. Instead of the closing price, we aim to predict the gain or loss, aka percent changes, of S&P 500 closing prices from 2020 to 2026. 
+
+This will be done using Alpha Vantage stock market data, since they have open/high/low/close prices of the S&P 500 Index from 1997 to the present day. 
 
 **Motivation**:
 
