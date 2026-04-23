@@ -1,6 +1,6 @@
-# DS 4320 Project 2: Forecasting S&P 500 Stock Prices Using Time-Series Analysis
+# DS 4320 Project 2: Forecasting S&P 500 Stock Returns Using Time-Series Analysis
 
-Executive summary: The goal of this github repository is to forecast the future closing price of the S&P 500 Index using historical time series data. This was done using a data analysis pipeline and includes jupyter notebooks for cleaning and analyzing stock market data, which can be found in the pipeline folder. Also included in the repository is a press release for potential end users and license.
+Executive summary: The goal of this GitHub repository is to forecast the future returns of the S&P 500 Index using historical time series data. This was done using a data analysis pipeline and includes jupyter notebooks for cleaning and analyzing stock market data, which can be found in the pipeline folder. Also included in the repository is a press release for potential end users and license.
 
 Name: Elaine Liu
 
@@ -9,8 +9,6 @@ Net ID: bpa2hu
 DOI:
 
 Press Release: [link](https://github.com/elaineliu05/databydesign_p2/blob/main/press_release.md)
-
-Data:
 
 Pipeline: [link](https://github.com/elaineliu05/databydesign_p2/blob/main/pipeline)
 
@@ -22,19 +20,19 @@ License: MIT License. [license](https://github.com/elaineliu05/databydesign_p2/b
 
 **Refined specific problem statement**:
 
-Forecasting the future closing price of the S&P 500 Index using historical time series data. This will be done using Alpha Vantage stock market data, since they have open/high/low/close prices of the S&P 500 Index from 1997 to the present day. 
+Forecasting the future returns of the S&P 500 Index using historical time series data. Instead of the closing price, we aim to predict the gain or loss, aka percent changes, of S&P 500 closing prices from 2020 to 2026. This will be done using Alpha Vantage stock market data, since they have open/high/low/close prices of the S&P 500 Index from 1997 to the present day. 
 
 **Motivation**:
 
-Being able to accurately forecast stock prices can be valuable information on when to buy and sell stocks. Looking into broad indices like S&P 500 can provide valuable insights into market trends and risk. Especially since there is a growing amount of financial data, we can apply time series analysis and data-driven methods to improve predictive performance.
+Being able to accurately forecast stock returns can be valuable information on when to buy and sell stocks. Looking into broad indices like the S&P 500 can provide valuable insights into market trends and risk. Especially since there is a growing amount of financial data, we can apply time series analysis and data-driven methods to improve predictive performance.
 
 **Rationale**:
 
-The general problem of forecasting stock prices is broad and difficult to tackle, since it can be influenced by many external factors. To make it more approachable, I decided to focus on specifically the S&P 500 index, which features the top 500 US companies. In particular, we want to predict the closing price using historical time series data, which is much more measureable and realistic to implement. With this narrowed down scope, the broader problem of "forecasting stock prices" is much easier to tackle and more measurable.
+The general problem of forecasting stock prices is broad and difficult to tackle, since it can be influenced by many external factors. To make it more approachable, I decided to focus specifically the S&P 500 index, which features the top 500 US companies. In particular, we want to predict the returns using historical time series data, which is much more measurable and realistic to implement. With this narrowed-down scope, the broader problem of "forecasting stock prices" is much easier to tackle and more measurable.
 
 **Headline**:
 
-[Fortune Telling or Forecasting: Predicting Stock Prices Over Time]
+[Fortune Telling or Forecasting: Predicting Stock Returns Over Time](https://github.com/elaineliu05/databydesign_p2/blob/main/press_release.md)
 
 
 ## Domain Exposition:
@@ -44,15 +42,15 @@ The general problem of forecasting stock prices is broad and difficult to tackle
 | Time Series | Data points collected in chronological order  |
 | Forecasting | Predicting future values based on historical data   |
 | Volatility | Degree of variation in price (e.g., high - low)   |
-| Stationarity   | Property where statistical characteristics of a time series do not change over time   |
+| Stationarity   | Property where statistical characteristics of a time series do not change over time |
 | Open Price   | Price at the start of the trading period   |
 | High Price   | Highest price reached during the period   |
 | Low Price   | Lowest price during the period   |
-| Close Price   | Final price at the end of the period (target variable)   |
+| Close Price   | Final price at the end of the period   |
 
 **Domain**:
 
-This question revolves around the field of finance and machine learning, using time series analysis to analyze financial markets. We could categorize it under quantitative finance, wince we are using math and statsitical techniques to inform decision making in finance. The data we are using is stock market data in a document based database, which is stored in json format.
+This question revolves around the field of finance and machine learning, using time series analysis to analyze financial markets. We could categorize it under quantitative finance, since we are using math and statistical techniques to inform decision-making in finance. The data we are using is stock market data in a document-based database, which is stored in JSON format.
 
 **Background reading**:
 
@@ -78,7 +76,7 @@ Data Creation Table (with links to code):
 
 | Brief Description | Link |
 | -------- | -------- |
-| Flattened json file then loaded into MongoDB as individual documents | [link](https://github.com/elaineliu05/databydesign_p2/blob/main/json_to_mongo.py) |
+| Flattened json file then loaded into MongoDB as individual documents | [link](https://github.com/elaineliu05/databydesign_p2/blob/main/pipeline/pipeline.ipynb) |
 
 **Bias Identification**:
 
@@ -96,7 +94,7 @@ There were many important and critical decisions that needed to be made when com
 
 **Implicit Schema Guidelines**:
 
-Each document represents a single time step for the S&P 500 index. The required fields are symbol, name, interval, date, open, high, low, and close. Price fields are all stored as floats, not strings. All documents use the same field names and structures, and there are no nested arrays for the time series data. There are no records wth missing values - all incomplete records are excluded. These guidelines ensure consistency throughout the database while also preserving the flexibility of the document structure.
+Each document represents a single time step for the S&P 500 index. The required fields are symbol, name, interval, date, open, high, low, and close. Price fields are all stored as floats, not strings. All documents use the same field names and structures, and there are no nested arrays for the time series data. There are no records with missing values - all incomplete records are excluded. These guidelines ensure consistency throughout the database while also preserving the flexibility of the document structure.
 
 **Data Summary**
 
@@ -109,7 +107,7 @@ Each document represents a single time step for the S&P 500 index. The required 
 | Time interval | Weekly |
 | Time Range | 1997 to 2026 |
 | Features per Document | 8 |
-| Target variable | closing price |
+| Target variable | closing price returns |
 
 **Data Dictionary**
 
