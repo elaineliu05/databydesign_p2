@@ -1,0 +1,7 @@
+2026-04-23 04:11:01,541 - INFO - Successfully loaded stock.json
+2026-04-23 04:11:01,548 - INFO - Flattened 1519 records successfully
+2026-04-23 04:11:01,568 - INFO - Saved flattened data to stock_flat.json
+2026-04-23 04:11:02,349 - INFO - Connected to MongoDB successfully
+2026-04-23 04:11:02,357 - INFO - Dropped existing collection
+2026-04-23 04:11:06,364 - INFO - Inserted 1519 documents
+2026-04-23 04:11:06,366 - INFO - Pipeline completed successfully!
