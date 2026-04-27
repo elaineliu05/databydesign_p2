@@ -39,6 +39,8 @@ The general problem of forecasting stock prices is broad and difficult to tackle
 
 ## Domain Exposition:
 
+**Terminology**:
+
 | Term | Definition |
 |----------|----------|
 | Time Series | Data points collected in chronological order  |
@@ -69,6 +71,8 @@ Link to UVA OneDrive [folder](https://myuva-my.sharepoint.com/:f:/g/personal/bpa
 
 
 ## Data Creation
+
+**Provenence**:
 
 To get the raw data, I went to the Alpha Vantage documentation page, which is linked here https://www.alphavantage.co/documentation/. Scrolling down, we can see a section for the S&P 500 data, which has the weekly open, high, low, and close time series data for the S&P 500 index.
 
