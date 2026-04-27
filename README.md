@@ -78,7 +78,7 @@ To get the raw data, I went to the Alpha Vantage documentation page, which is li
 
 They have a link to the JSON output, which is linked here https://www.alphavantage.co/query?function=INDEX_DATA&symbol=SPX&interval=weekly&apikey=demo.  This directs the user to a page with all the data in JSON format. I copy pasted this data into a JSON file locally so that I could process it into documents to put into MongoDB.
 
-Data Creation Table (with links to code): 
+**Data Creation Table (with links to code)**: 
 
 | Brief Description | Link |
 | -------- | -------- |
