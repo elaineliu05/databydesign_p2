@@ -61,11 +61,11 @@ Link to UVA OneDrive [folder](https://myuva-my.sharepoint.com/:f:/g/personal/bpa
 **Summary Table**:
 | Title | Brief Description | Link |
 |----------|----------|-------|
-| Forecasting S&P 500 stocks    | Applies random forest, SVM, and LSTM to classify if a stock can return 2% more than its index     |[here](https://myuva-my.sharepoint.com/:u:/r/personal/bpa2hu_virginia_edu/Documents/databydesign_p2/Forecasting%20relative%20returns%20for%20S%26P%20500%20stocks%20using%20machine%20learning.url?csf=1&web=1&e=E1ERWN)|
-| Stock Price trend Prediction in Vietnam    | Uses an LSTM model to analyze and forecast stock price movements in an emerging economy     |[here](https://myuva-my.sharepoint.com/:u:/r/personal/bpa2hu_virginia_edu/Documents/databydesign_p2/Applying%20machine%20learning%20algorithms%20to%20predict%20the%20stock%20price%20trend%20in%20the%20stock%20market%20%E2%80%93%20The%20case%20of%20Vietnam.url?csf=1&web=1&e=OgvPV9)|
-| Predicting Closing Prices    | Uses a random forest and ANN to predict the next day closing price for 5 different companies    |[here](https://myuva-my.sharepoint.com/:u:/r/personal/bpa2hu_virginia_edu/Documents/databydesign_p2/Stock%20Closing%20Price%20Prediction%20using%20Machine%20Learning%20Techniques.url?csf=1&web=1&e=OhxYHh)|
-| Comparing ML Methods    | Compares decision trees, random forest, SVM, and k means clustering on Tesla stock transactions     |[here](https://myuva-my.sharepoint.com/:u:/r/personal/bpa2hu_virginia_edu/Documents/databydesign_p2/A%20Comparative%20Study%20of%20Machine%20Learning%20Algorithms%20for%20Stock%20Price%20Prediction%20Using%20Insider%20Trading%20Data.url?csf=1&web=1&e=7PlFoF)|
-| Overview and Tips| Provides background overview and tips for ML stock market predictions, as well as potential use cases    |[here](https://myuva-my.sharepoint.com/:u:/r/personal/bpa2hu_virginia_edu/Documents/databydesign_p2/www.itransition.com.url?csf=1&web=1&e=vmYdhH)|
+| Forecasting S&P 500 stocks    | Applies random forest, SVM, and LSTM to classify if a stock can return 2% more than its index     |[here](https://link.springer.com/article/10.1186/s40854-024-00644-0)|
+| Stock Price trend Prediction in Vietnam    | Uses an LSTM model to analyze and forecast stock price movements in an emerging economy     |[here](https://www.nature.com/articles/s41599-024-02807-x)|
+| Predicting Closing Prices    | Uses a random forest and ANN to predict the next day closing price for 5 different companies    |[here](https://www.sciencedirect.com/science/article/pii/S1877050920307924)|
+| Comparing ML Methods    | Compares decision trees, random forest, SVM, and k means clustering on Tesla stock transactions     |[here](https://arxiv.org/html/2502.08728v1)|
+| Overview and Tips| Provides background overview and tips for ML stock market predictions, as well as potential use cases    |[here](https://www.itransition.com/machine-learning/stock-prediction)|
 
 
 ## Data Creation
