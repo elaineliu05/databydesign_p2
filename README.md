@@ -126,5 +126,13 @@ Each document represents a single time step for the S&P 500 index. The required 
 
 **Quantification of Uncertainty:**
 
-There is limited uncertainty in open/high/low/close stock market data, since there is rarely missing data, and it is relatively straightforward to measure. For instance, financial data is recorded with finite precision and may vary slightly across data providers. However, the uncertainty present is mostly driven by inherent market volatility and external economic factors. The differences between data providers, such as Alpha Vantage, will likely have small measurement inconsistencies, which we can likely quantify as plus or minus 0.05. For instance, if a closing price is 6519.60, the uncertainty can be captured by an interval between 6519.55 and 6519.65.
+| Variable | Mean | Std | Min | Max |
+|----------|----------|----------|----------|---------|
+| open | 2203.92| 1485.05| 680.76| 6944.12|
+| high| 2236.76| 1504.87| 729.57| 7002.28 |
+| low | 2170.18| 1466.71| 666.79| 6891.56|
+| close| 2207.81| 1488.84| 683.38| 6966.28|
+
+In the table above we can see there is quite a bit of variability between the open/high/low/close values, since we have a large standard deviation and a big range between min and max values. As for the uncertainty in the actual values, there is limited uncertainty since there is rarely missing data, and it is relatively straightforward to measure. For instance, financial data is recorded with finite precision and may vary slightly across data providers. However, the uncertainty present is mostly driven by inherent market volatility and external economic factors. The differences between data providers, such as Alpha Vantage, will likely have small measurement inconsistencies, which we can likely quantify as plus or minus 0.05. For instance, if a closing price is 6519.60, the uncertainty can be captured by an interval between 6519.55 and 6519.65.
+
 
